@@ -5,7 +5,7 @@ import store from './redux/store';
 import LoginPage from './pages/LoginPage';
 import ToDoPage from './pages/ToDoPage';
 import ErrorBoundary from './components/ErrorBoundary';
-import './styles/App.css';
+import './Styles/App.css';
 
 const App = () => {
   return (
