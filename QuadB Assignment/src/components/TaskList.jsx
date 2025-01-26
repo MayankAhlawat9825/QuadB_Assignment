@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import TaskItem from './TaskItem';
-import '../Styles/TaskList.css';
+import '../Styles/TaskLIst.css';
 
 const TaskList = ({ isGridView, onTaskClick }) => {
   const tasks = useSelector((state) => state.todos.tasks);
