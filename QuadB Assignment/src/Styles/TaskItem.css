@@ -1,0 +1,44 @@
+.task-item {
+    background-color: var(--task-background-color);
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid var(--task-border-color);
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .task-item.completed {
+    background-color: var(--task-completed-color);
+  }
+  
+  .task-item span {
+    flex-grow: 1;
+  }
+  
+  .task-item .fa-star {
+    cursor: pointer;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    border-radius: 50%;
+  }
+  
+  .task-item .fa-star.important {
+    color: var(--important-color);
+  }
+  
+  .task-item button {
+    background-color: var(--delete-button-background-color);
+    color: var(--button-text-color);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .task-item button:hover {
+    background-color: var(--delete-button-hover-color);
+  }
+  

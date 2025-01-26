@@ -1,0 +1,58 @@
+.task-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-list.grid-view {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.task-item {
+  background-color: var(--task-background-color);
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid var(--task-border-color);
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-item.completed {
+  background-color: var(--task-completed-color);
+}
+
+.task-item span {
+  flex-grow: 1;
+}
+
+.fas.fa-star {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--task-border-color);
+}
+
+.fas.fa-star.important {
+  color: var(--important-color);
+}
+
+.task-item button {
+  background-color: var(--delete-button-background-color);
+  color: var(--button-text-color);
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.task-item button:hover {
+  background-color: var(--delete-button-hover-color);
+}
+
+.no-tasks {
+  text-align: center;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  margin-top: 20px;
+}

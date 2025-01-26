@@ -1,0 +1,159 @@
+:root {
+  --background-color: #D0DDD0;
+  --text-color: #333;
+  --header-background-color: #d2d8d8;
+  --header-text-color:  #000000;
+  --task-background-color: white;
+  --task-border-color: #ccc;
+  --task-completed-color: #e0e0e0;
+  --important-color: gold;
+  --button-background-color: #a9afaf;
+  --button-hover-color: #5d6969;
+  --button-text-color: white;
+  --delete-button-background-color: #f44336;
+  --delete-button-hover-color: #e53935;
+  --weather-background-color: #72a5e4;
+  --sidebar-background-color: #F0F0D7;
+  --tasksidebar-background-color:#F0F0D7;
+}
+
+[data-theme="dark"] {
+  --background-color: #4B5945;
+  --text-color: #f4f4f4;
+  --header-background-color: #222;
+  --header-text-color: #ffffff;
+  --task-background-color: #444;
+  --task-border-color: #555;
+  --task-completed-color: #666;
+  --important-color: gold;
+  --button-background-color: #555;
+  --button-hover-color: #666;
+  --button-text-color: #f4f4f4;
+  --delete-button-background-color: #f44336;
+  --delete-button-hover-color: #e53935;
+  --sidebar-background-color: #66785F;
+  --tasksidebar-background-color: #66785F;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* .header {
+  background-color: transparent;
+  color: var(--header-text-color);
+  text-align: center;
+} */
+
+h1 {
+  margin: 0;
+}
+
+button {
+  background-color: var(--button-background-color);
+  color: var(--button-text-color);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--button-hover-color);
+}
+
+input[type="text"], input[type="password"] {
+  padding: 10px;
+  width: calc(100% - 22px);
+  margin-bottom: 10px;
+  border: 1px solid var(--task-border-color);
+  border-radius: 4px;
+}
+
+.task-input {
+  margin-bottom: 20px;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-item {
+  background-color: var(--task-background-color);
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid var(--task-border-color);
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-item.completed {
+  background-color: var(--task-completed-color);
+}
+
+.task-item span {
+  flex-grow: 1;
+}
+
+.task-item .icon-star {
+  cursor: pointer;
+}
+
+.task-item .icon-star.important {
+  color: var(--important-color);
+}
+
+.task-item button {
+  background-color: var(--delete-button-background-color);
+  color: var(--button-text-color);
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.task-item button:hover {
+  background-color: var(--delete-button-hover-color);
+}
+
+.weather-info {
+  background-color: var(--weather-background-color);
+  padding: 10px;
+  border: 1px solid #90caf9;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.error-boundary {
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  /* .main-content {
+    padding: px;
+  } */
+
+  button {
+    width: 100%;
+    padding: 10px;
+  }
+
+  input[type="text"], input[type="password"] {
+    width: calc(100% - 20px);
+  }
+}

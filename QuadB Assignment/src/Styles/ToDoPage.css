@@ -1,0 +1,36 @@
+.todo-page {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.content {
+  display: flex;
+  margin-top: 60px; /* Adjust this value based on the height of the header */
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 10px;
+  transition: margin-right 0.3s ease;
+}
+
+/* .todo-page.task-sidebar-open .main-content {
+  margin-right: 490px; /* Adjust this value based on the width of the task sidebar }
+*/
+
+
+.sidebar-hidden .main-content {
+  margin-left: 0;
+}
+
+.grid-view {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.column-view {
+  display: flex;
+  flex-direction: column;
+}

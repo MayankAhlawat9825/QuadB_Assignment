@@ -1,0 +1,34 @@
+.task-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-input input[type="text"],
+.task-input input[type="date"] {
+  padding: 10px;
+  border: 1px solid var(--task-border-color);
+  border-radius: 4px;
+}
+
+.task-input-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.task-input-icons i {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+button {
+  background-color: var(--button-background-color);
+  color: var(--button-text-color);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--button-hover-color);
+}

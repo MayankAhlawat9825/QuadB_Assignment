@@ -1,0 +1,86 @@
+.sidebar {
+  width: 250px;
+  background-color: var(--sidebar-background-color);
+  color: #333;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.sidebar .profile {
+  text-align: center;
+}
+
+.sidebar .profile img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.sidebar ul li:hover {
+  background-color: #e0e0e0;
+}
+
+.sidebar ul li.active {
+  background-color: #adcce3;
+  border-radius: 2px;
+  padding-left: 10px;
+}
+
+.sidebar .pie-chart {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0e0e0;
+  border-radius: 20px;
+}
+
+.sidebar-content-info {
+  background-color: #e0e0e0;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-content-info ul {
+  margin-left: 10%;
+  width: 80%;
+}
+
+.sidebar-content-info ul li:hover {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #adb4b9;
+  border-radius: 5px;
+  color: #333;
+}
+
+.pie-chart canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+.pie-chart {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0e0e0;
+  border-radius: 20px;
+}

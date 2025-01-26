@@ -1,0 +1,67 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed; /* Fix the header at the top */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure the header is above other elements */
+  color: var(--header-text-color); /* Use the CSS variable for text color */
+  background-color: transparent; /* Use the CSS variable for background color */
+  transition: top 0.3s; /* Smooth transition for hiding and showing the header */
+}
+
+.header.hide {
+  top: -60px; /* Adjust this value based on the height of your header */
+}
+
+.header.show {
+  top: 0;
+}
+
+.header input {
+  padding: 10px;
+  width: 200px;
+}
+
+.LeftNav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.RightNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.RightNav i {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--header-text-color); /* Use the CSS variable for icon color */
+}
+
+.theme-toggle-button,
+.sidebar-toggle-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 5px;
+  color: var(--header-text-color); /* Use the CSS variable for button color */
+}
+
+.search-bar {
+  padding: 10px;
+  width: 200px;
+  margin-left: 10px;
+}
